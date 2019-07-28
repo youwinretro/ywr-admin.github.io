@@ -1,5 +1,0 @@
-import './imports/bootstrap'
-import './imports/components'
-import './imports/use'
-import './imports/icons'
-import './imports/window'
