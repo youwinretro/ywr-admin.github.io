@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import "~vue-snotify/styles/material";
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../assets/img/fundo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.space-top-100 { margin-top: 100px; }
+
+$theme-colors: (
+    "primary":  #510102,
+    "white":  #fff,
+    "warning":  #fed136,
+    "info":  #08e5f5,
+);
+
+// input
+$input-bg: rgba(255, 255, 255, 0.1);
+$input-color: theme-color("info");
+$input-placeholder-color: rgba($input-bg, .2);
+$input-border-color: $input-bg;
+// input focus
+$input-focus-color: $input-color;
+$input-focus-bg: rgba($input-bg, .2);
+$input-focus-border-color: $input-bg;
+$input-focus-box-shadow: 0 0 0 2px rgba(theme-color("warning"), .8);
+
+// dropdown
+$custom-select-bg: $input-bg;
+$custom-select-color: $input-color;
+$custom-select-border-color: theme-color("info");
+// dropdown focus
+$custom-select-focus-bg: rgba($custom-select-bg, .2);
+$custom-select-focus-border-color: $input-bg;
+$custom-select-focus-box-shadow: $input-focus-box-shadow;
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
